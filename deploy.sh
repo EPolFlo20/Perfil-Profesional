@@ -10,7 +10,7 @@ sudo git pull origin main
 sudo systemctl start NGINX
 
 # Generar URL de NGROK
-ngrok http 80 > /dev/null &
+sudo ngrok http 80 > /dev/null &
 
 # Desplegar la URL de NGROK
 sleep 3
