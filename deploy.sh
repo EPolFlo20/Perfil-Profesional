@@ -1,13 +1,13 @@
 #!/bin/bash
 # Apagar NGINX y NGROK
-sudo systemctl stop NGINX
+sudo systemctl stop nginx
 pkill ngrok
 
 # Clonar repositorio
 sudo git pull origin main
 
 # Encender NGINX
-sudo systemctl start NGINX
+sudo systemctl start nginx
 
 # Generar URL de NGROK
 sudo ngrok http 80 > /dev/null &
